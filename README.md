@@ -78,7 +78,7 @@ curl {get_list_endpoint}/{id}
 curl -X PUT {post_endpoint}/{id} --data '{ "img_path": "img.png" }'
 ```
 
-### Delete a Todo
+### Delete a Form Entry
 ```bash
 # Replace the {id} part with a real id from your the table
 curl -X DELETE {delete_endpoint}/{id}
