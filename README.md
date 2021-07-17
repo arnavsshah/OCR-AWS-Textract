@@ -66,13 +66,13 @@ curl -X POST {post_endpoint} --data '{ "img_path": "img.png" }'
 curl {get_list_endpoint}
 ```
 
-### Get one Form Entry
+### Get a Form Entry
 ```bash
 # Replace the {id} part with a real id from the table
 curl {get_list_endpoint}/{id}
 ```
 
-### Update a Todo
+### Update a Form Entry
 ```bash
 # Replace the {id} part with a real id from your the table
 curl -X PUT {post_endpoint}/{id} --data '{ "img_path": "img.png" }'
