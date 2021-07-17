@@ -69,7 +69,7 @@ curl {get_list_endpoint}
 ### Get one Form Entry
 ```bash
 # Replace the {id} part with a real id from the table
-curl {get_list_endpoint}/<id>
+curl {get_list_endpoint}/{id}
 ```
 
 ### Update a Todo
@@ -81,7 +81,7 @@ curl -X PUT {post_endpoint}/{id} --data '{ "img_path": "img.png" }'
 ### Delete a Todo
 ```bash
 # Replace the {id} part with a real id from your the table
-curl -X DELETE {delete_endpoint}/<id>
+curl -X DELETE {delete_endpoint}/{id}
 ```
 **All endpoints are provided in the project above.<br>
 **Can also use localhost:3000 to make a POST request
