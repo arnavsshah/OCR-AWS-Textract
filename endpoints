@@ -1,0 +1,5 @@
+  GET - https://a5ii9i974f.execute-api.ap-south-1.amazonaws.com/dev/form/{id}
+  GET - https://a5ii9i974f.execute-api.ap-south-1.amazonaws.com/dev/form/
+  POST - https://a5ii9i974f.execute-api.ap-south-1.amazonaws.com/dev/form
+  UPDATE - https://a5ii9i974f.execute-api.ap-south-1.amazonaws.com/dev/form/{id}
+  DELETE - https://a5ii9i974f.execute-api.ap-south-1.amazonaws.com/dev/form/{id}

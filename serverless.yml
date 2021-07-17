@@ -1,0 +1,45 @@
+service: group-20-final
+
+frameworkVersion: "2.46.0"
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: ap-south-1
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource: "arn:aws:dynamodb:ap-south-1:429937773353:table/group-20Form"
+
+functions:
+
+  get:
+    handler: todos/get.get
+    events:
+      - http:
+          path: form/{id}
+          method: get
+          cors: true
+
+  post:
+    handler: todos/create.create
+    events:
+      - http:
+          path: form
+          method: post
+          cors: true
+
+
+  delete:
+    handler: todos/delete.delete
+    events:
+        - http:
+            path: form/{id}
+            method: delete
+            cors: true
